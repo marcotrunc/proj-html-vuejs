@@ -1,0 +1,31 @@
+@import "./_variables.scss";
+// Height
+.h-100-vh{
+    height: 100vh;
+}
+
+// Background-color
+.bs-dark{
+    background-color: $bs-dark;
+}
+
+// Font-size
+.fs-big{
+    font-size: 6rem;
+}
+
+// Color
+.text-grey{
+color: $dove-grey;
+}
+
+// Padding
+.p-6{
+    padding: 3.5rem;
+}
+.p-7{
+    padding: 4rem;
+}
+.p-{
+    padding: 4.5rem;
+}
