@@ -3,10 +3,18 @@
 .h-100-vh{
     height: 100vh;
 }
-
+.h-90-vh{
+    height: 90vh;
+}
+.h-80-vh{
+    height: 80vh;
+}
 // Background-color
 .bs-dark{
     background-color: $bs-dark;
+}
+.bs-black-lg{
+    background-color: $shark-black;
 }
 
 // Font-size
@@ -18,14 +26,23 @@
 .text-grey{
 color: $dove-grey;
 }
+.text-grey-light{
+    color: $edward-grey;
+}
+.text-rose{
+    color: $chestnut-rose;
+}
 
 // Padding
-.p-6{
-    padding: 3.5rem;
+.py-6{
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
 }
-.p-7{
-    padding: 4rem;
+.py-7{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
-.p-{
-    padding: 4.5rem;
+.py-8{
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
 }

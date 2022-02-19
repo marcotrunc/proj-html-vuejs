@@ -1,10 +1,10 @@
 <template>
   <div class="text-white text-center mt-5">
     <div>
-      <h3 class="d-inline-block text-uppercase">{{ titleText }}</h3>
+      <h2 class="d-inline-block text-uppercase">{{ titleText }}</h2>
       <span class="h3"> {{ specificText }}</span>
     </div>
-    <figure>
+    <figure class="my-4">
       <img src="../assets/img/divider-xx-red.png" alt="divider" />
     </figure>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid position-relative p-7">
+  <div class="container-fluid position-relative py-7">
     <section class="container">
       <div class="row flex-column align-items-center">
         <div class="col-4">
