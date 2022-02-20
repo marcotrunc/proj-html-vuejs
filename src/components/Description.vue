@@ -33,11 +33,4 @@ export default {
 .container-fluid {
   background-color: $shark-black;
 }
-
-.arrow-down {
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translate(-50%, 0%);
-}
 </style>

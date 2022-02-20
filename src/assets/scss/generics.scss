@@ -1,5 +1,5 @@
 body{
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: "Open Sans",Arial, Helvetica, sans-serif;
 }
 
 .arrow-down {
@@ -9,4 +9,9 @@ body{
     border-right: 25px solid transparent;   
     border-top: 25px solid $shark-black;
     // shark-black
+
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0%);
   }

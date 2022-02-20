@@ -10,11 +10,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/_variables.scss";
 button {
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid $dove-grey;
   padding: 10px 25px;
-  color: #fff;
+  color: $dove-grey;
   text-transform: uppercase;
 }
 </style>

@@ -20,14 +20,9 @@
     <Trainers />
     <!-- Blocco simile ai due citati sopra con Titolo e icone uguali, ma con contenuto diverso. All'interno ci sono delle card da costituire come componenti e ripetere tre volte,STESSO BTN con quello di sotto  -->
 
-    <div>
-      <!-- Blocco simile ai due citati sopra con Titolo e icone uguali, ma con contenuto diverso. All'interno ci sono delle card da costituire come componenti e ripetere sei volte, per il BTN leggi sopra  -->
-    </div>
-    <section id="Footer">
-      <div><!-- --></div>
-      <div><!-- --></div>
-      <div><!-- --></div>
-    </section>
+    <News />
+    <!-- Blocco simile ai due citati sopra con Titolo e icone uguali, ma con contenuto diverso. All'interno ci sono delle card da costituire come componenti e ripetere sei volte, per il BTN leggi sopra  -->
+    <Footer />
   </div>
 </template>
 
@@ -39,6 +34,8 @@ import Advantage from "./components/Advantage.vue";
 import Results from "./components/Results.vue";
 import Banner from "./components/Banner.vue";
 import Trainers from "./components/Trainers.vue";
+import News from "./components/News.vue";
+import Footer from "./components/Footer.vue";
 export default {
   name: "App",
   components: {
@@ -49,6 +46,8 @@ export default {
     Results,
     Banner,
     Trainers,
+    News,
+    Footer,
   },
   data() {
     return {

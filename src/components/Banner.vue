@@ -1,5 +1,5 @@
 <template>
-  <section class="py-7">
+  <section class="pt-5">
     <div
       class="
         container-fluid
@@ -7,7 +7,6 @@
         justify-content-center
         align-items-center
         h-90-vh
-        mb-5
       "
     >
       <div class="text-white text-center quote">
