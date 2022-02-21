@@ -15,31 +15,20 @@
       </div>
     </section>
 
-    <section id="high-performance-facilities" class="py-7">
-      <div class="container">
-        <Title title-text="High Performance facilities" />
-        <div class="row g-5">
-          <div v-for="(img, index) in imgCards" :key="index" class="col-4">
-            <img
-              :src="require(`../assets/img/${img.imgUrl}`)"
-              :alt="img.alt"
-              class="img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+    <Performance />
   </div>
 </template>
 
 <script>
 import Title from "./Title.vue";
 import ResCard from "./ResCard.vue";
+import Performance from "./Performance.vue";
 export default {
   name: "Results",
   components: {
     Title,
     ResCard,
+    Performance,
   },
   data() {
     return {
@@ -64,14 +53,6 @@ export default {
           text: "No bad things to say about Avada Gym, they are top notch at every corner and truly take care of their customers.",
           signature: "Jeff Glum",
         },
-      ],
-      imgCards: [
-        { imgUrl: "home-image1.jpg", alt: "img" },
-        { imgUrl: "home-image2.jpg", alt: "img" },
-        { imgUrl: "home-image3.jpg", alt: "img" },
-        { imgUrl: "home-image4.jpg", alt: "img" },
-        { imgUrl: "home-image54.jpg", alt: "img" },
-        { imgUrl: "home-image6.jpg", alt: "img" },
       ],
     };
   },

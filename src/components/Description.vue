@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid position-relative py-7">
-    <section class="container">
+    <section class="container py-7">
       <div class="row flex-column align-items-center">
         <div class="col-4">
           <Title title-text="World Class" specificText="Fitness" />

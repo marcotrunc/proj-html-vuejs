@@ -30,7 +30,7 @@
 
       <!--Header Content-->
       <section id="banner" class="flex-grow-1">
-        <div class="text-center pt-4">
+        <div class="text-center py-7">
           <h1 class="text-uppercase fs-big text-white mb-5">No pain no gain</h1>
           <p class="text-white fs-4 mb-5">
             Motivation is what gets you stared. Habit is what keeps you going
@@ -59,7 +59,11 @@ export default {
   background-position: center;
   background-size: cover;
 }
-
+#banner {
+  h1 {
+    font-weight: 700;
+  }
+}
 #menu {
   display: flex;
 

@@ -2,27 +2,14 @@
   <section class="container-fluid bs-black-lg py-7">
     <div class="container py-7 h-100">
       <Title title-text="performance news" />
-      <div class="row flex-column h-100 gx-5 gy-5">
-        <div class="col-4" v-for="(card, index) in newsCards" :key="index">
-          <div class="bs-dark">
-            <figure>
-              <img
-                :src="require(`../assets/img/${card.imgUrl}`)"
-                :alt="card.title"
-                class="img-fluid"
-              />
-            </figure>
-            <div class="description p-4 fs-6">
-              <h4 class="text-white">
-                {{ card.title }}
-              </h4>
-              <p class="text-grey lh-lg">
-                {{ card.text }}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <Cards
+        :list="newsCards"
+        :bk-col="'bs-black'"
+        :isColumn="true"
+        :notSocial="true"
+      />
+
       <section class="button">
         <Btn textBtn="Read all articles" />
       </section>
@@ -33,11 +20,13 @@
 <script>
 import Title from "./Title.vue";
 import Btn from "./Btn.vue";
+import Cards from "./Cards.vue";
 export default {
   name: "Vue",
   components: {
     Title,
     Btn,
+    Cards,
   },
   data() {
     return {

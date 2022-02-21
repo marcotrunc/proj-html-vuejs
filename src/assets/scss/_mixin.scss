@@ -1,0 +1,8 @@
+@import "./_variables.scss";
+@mixin bk-col ($bk-color,$firstColor,$secondColor){
+    #{$bk-color}:$firstColor;
+
+    @if $secondColor {
+        #{$bk-color}: $secondColor;
+    }
+}

@@ -2,7 +2,7 @@
   <div class="text-white text-center mt-5">
     <div>
       <h2 class="d-inline-block text-uppercase">{{ titleText }}</h2>
-      <span class="h3"> {{ specificText }}</span>
+      <span> {{ specificText }}</span>
     </div>
     <figure class="my-4">
       <img src="../assets/img/divider-xx-red.png" alt="divider" />
@@ -19,6 +19,11 @@ export default {
 
 <style lang="scss" scoped>
 h2 {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+span {
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 </style>

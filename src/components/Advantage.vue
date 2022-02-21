@@ -1,17 +1,31 @@
 <template>
+  <!-- Container -->
   <div class="container-fluid py-7">
-    <div class="container mt-5">
+    <div class="container py-7">
       <div class="row">
+        <!-- v-for -->
         <div
           v-for="(card, index) in adCards"
           :key="index"
           class="col-3 text-white text-center"
         >
-          <AdCard
-            :icon="card.icon"
-            :title="card.title"
-            :paragraph="card.paragraph"
-          />
+          <!-- Single Card -->
+          <div>
+            <div class="d-flex justify-content-center mb-3">
+              <figure>
+                <i class="fa-solid fa-3x text-rose" :class="card.icon"></i>
+              </figure>
+            </div>
+            <h5>{{ card.title }}</h5>
+            <img
+              src="../assets/img/divider-x-red.png"
+              alt="card.title"
+              class="my-2"
+            />
+            <p class="text-grey">
+              {{ card.paragraph }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -19,12 +33,9 @@
 </template>
 
 <script>
-import AdCard from "./AdCard.vue";
 export default {
   name: "Advantage",
-  components: {
-    AdCard,
-  },
+
   data() {
     return {
       adCards: [
@@ -59,9 +70,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/_variables.scss";
 .container-fluid {
   background-image: url("../assets/img/gym_bkgd_bw-compressor.jpg");
   background-position: center;
   background-size: cover;
+  figure {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid $chestnut-rose;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>

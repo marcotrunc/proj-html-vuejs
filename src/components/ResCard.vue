@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex align-items-center p-4 bs-dark">
+  <div class="d-flex align-items-center p-4 bs-black">
     <div>
       <img
         :src="require(`../assets/img/${imgUrl}`)"
@@ -7,8 +7,8 @@
         class="text-grey"
       />
     </div>
-    <div class="text-grey-light p-2">
-      <p class="fst-italic">{{ `"${text}"` }}</p>
+    <div class="text-grey-light p-4">
+      <p class="fst-italic lh-lg">{{ `"${text}"` }}</p>
       <span>- {{ signature }}</span>
     </div>
   </div>
