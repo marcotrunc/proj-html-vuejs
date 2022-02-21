@@ -2,7 +2,12 @@
   <section class="high-performance-facilities py-7">
     <div class="container">
       <Title title-text="High Performance facilities" />
-      <Cards :list="imgCards" not-Social="true" not-text="true" />
+      <Cards
+        :list="imgCards"
+        :not-Social="true"
+        :not-text="true"
+        :isScaled="true"
+      />
     </div>
   </section>
 </template>

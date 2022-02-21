@@ -9,6 +9,7 @@
         :not-social="false"
         :isColumn="false"
         :socialList="socialList"
+        :isScaled="true"
       />
       <div class="d-flex justify-content-center mt-5 py-5">
         <Btn text-btn="View all trainers" />

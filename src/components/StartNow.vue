@@ -5,7 +5,11 @@
         <!-- Block left -->
         <div class="col-6">
           <figure>
-            <img src="../assets/img/home_img-compressor.jpg" alt="img-gym" />
+            <img
+              src="../assets/img/home_img-compressor.jpg"
+              alt="img-gym"
+              class="img-fluid"
+            />
           </figure>
         </div>
         <!-- Form Block -->
@@ -42,6 +46,12 @@ export default {
   background-color: $shark;
   h4 {
     font-weight: 600;
+  }
+  img {
+    transition: transform 0.5s;
+    &:hover {
+      transform: scale(1.06);
+    }
   }
 }
 </style>

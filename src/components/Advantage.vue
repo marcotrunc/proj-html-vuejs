@@ -71,6 +71,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/_variables.scss";
+@import "../assets/scss/_mixin.scss";
 .container-fluid {
   background-image: url("../assets/img/gym_bkgd_bw-compressor.jpg");
   background-position: center;
@@ -80,10 +81,35 @@ export default {
     height: 100px;
     border-radius: 50%;
     border: 2px solid $chestnut-rose;
+    box-shadow: 0px 0px 0px 0px $chestnut-rose;
+    @include centralizes-flex;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &:hover {
+      // @include scale(0.9);
+      @include animation-options(shadow-incr, 2s, forwards);
+    }
+  }
+}
+@keyframes shadow-incr {
+  0% {
+    border: 2px solid $chestnut-rose;
+    box-shadow: 0px 0px 0px 0px $chestnut-rose;
+  }
+  25% {
+    border: 25px solid transparent;
+    box-shadow: 0px 0px 2px 15px $chestnut-rose;
+  }
+  50% {
+    border: 45px solid transparent;
+    box-shadow: 0px 0px 2px 15px $chestnut-rose;
+  }
+  75% {
+    border: 50px solid transparent;
+    box-shadow: 0px 0px 2px 15px $chestnut-rose;
+  }
+  100% {
+    border: 2px solid $chestnut-rose;
+    box-shadow: 0px 0px 0px 0px $chestnut-rose;
   }
 }
 </style>

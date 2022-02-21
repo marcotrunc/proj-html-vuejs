@@ -8,6 +8,7 @@
         :bk-col="'bs-black'"
         :isColumn="true"
         :notSocial="true"
+        :isFilter="true"
       />
 
       <section class="button">
@@ -22,7 +23,7 @@ import Title from "./Title.vue";
 import Btn from "./Btn.vue";
 import Cards from "./Cards.vue";
 export default {
-  name: "Vue",
+  name: "News",
   components: {
     Title,
     Btn,

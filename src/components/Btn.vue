@@ -13,9 +13,14 @@ export default {
 @import "../assets/scss/_variables.scss";
 button {
   background-color: transparent;
-  border: 1px solid $dove-grey;
+  border: 2px solid $dove-grey;
   padding: 10px 25px;
   color: $dove-grey;
   text-transform: uppercase;
+  transition: border 1s, color 1s;
+  &:hover {
+    border: 2px solid #fff;
+    color: #fff;
+  }
 }
 </style>

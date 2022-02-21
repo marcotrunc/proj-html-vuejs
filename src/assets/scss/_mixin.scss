@@ -1,8 +1,46 @@
 @import "./_variables.scss";
-@mixin bk-col ($bk-color,$firstColor,$secondColor){
-    #{$bk-color}:$firstColor;
 
-    @if $secondColor {
-        #{$bk-color}: $secondColor;
-    }
+
+// Position Top Left
+@mixin pos-start {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// Width Start
+@mixin width-start {
+    height: 100%;
+    width: 0%;
+}
+
+// Animation Options
+@mixin animation-options ($name, $duration, $mode){
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-fill-mode:  $mode;
+  
+}
+// Cen0%{tralizes with position absolute
+@mixin centralizes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+// Scale 
+@mixin scale ($value){
+    transform: scale($value);
+    box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: 0.3);
+}
+// Transition
+@mixin transition ($property, $time){
+    transition: $property ($time);
+}
+// Centralizes Flex
+@mixin centralizes-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
