@@ -4,7 +4,11 @@
       <div class="container">
         <Title title-text="Real World Results" />
         <div class="row g-5">
-          <div v-for="(card, index) in ResCards" :key="index" class="col-6">
+          <div
+            v-for="(card, index) in ResCards"
+            :key="index"
+            class="col-lg-6 col-12"
+          >
             <ResCard
               :imgUrl="card.imgUrl"
               :text="card.text"
@@ -14,21 +18,40 @@
         </div>
       </div>
     </section>
-
-    <Performance />
+    <section class="high-performance-facilities py-7">
+      <div class="container">
+        <Title title-text="High Performance facilities" />
+        <div class="row h-100 g-5">
+          <div
+            class="col-12 col-md-6 col-lg-4 text-center"
+            v-for="(card, index) in imgCards"
+            :key="index"
+          >
+            <Cards
+              :imgUrl="card.imgUrl"
+              :title="card.alt"
+              :not-Social="true"
+              :not-text="true"
+              :isScaled="true"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 import Title from "./Title.vue";
 import ResCard from "./ResCard.vue";
-import Performance from "./Performance.vue";
+import Cards from "./Cards.vue";
+
 export default {
   name: "Results",
   components: {
     Title,
+    Cards,
     ResCard,
-    Performance,
   },
   data() {
     return {
@@ -53,6 +76,14 @@ export default {
           text: "No bad things to say about Avada Gym, they are top notch at every corner and truly take care of their customers.",
           signature: "Jeff Glum",
         },
+      ],
+      imgCards: [
+        { imgUrl: "home-image1.jpg", alt: "img" },
+        { imgUrl: "home-image2.jpg", alt: "img" },
+        { imgUrl: "home-image3.jpg", alt: "img" },
+        { imgUrl: "home-image4.jpg", alt: "img" },
+        { imgUrl: "home-image54.jpg", alt: "img" },
+        { imgUrl: "home-image6.jpg", alt: "img" },
       ],
     };
   },

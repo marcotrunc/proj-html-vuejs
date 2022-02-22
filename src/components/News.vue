@@ -2,15 +2,23 @@
   <section class="container-fluid bs-black-lg py-7">
     <div class="container py-7 h-100">
       <Title title-text="performance news" />
-
-      <Cards
-        :list="newsCards"
-        :bk-col="'bs-black'"
-        :isColumn="true"
-        :notSocial="true"
-        :isFilter="true"
-      />
-
+      <div class="row h-100 g-5 flex-column align-items-center">
+        <div
+          class="col-12 col-md-4"
+          v-for="(card, index) in newsCards"
+          :key="index"
+        >
+          <Cards
+            :imgUrl="card.imgUrl"
+            :title="card.title"
+            :text="card.text"
+            :bk-col="'bs-black'"
+            :isColumn="true"
+            :notSocial="true"
+            :isFilter="true"
+          />
+        </div>
+      </div>
       <section class="button">
         <Btn textBtn="Read all articles" />
       </section>
@@ -73,10 +81,17 @@ export default {
   height: 1800px;
   position: relative;
   .button {
+    margin-top: 20px;
     position: absolute;
-    top: 100%;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -200%);
+    transform: translate(-50%, -100%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    height: 4200px;
   }
 }
 </style>

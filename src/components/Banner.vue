@@ -31,6 +31,7 @@ export default {
   background-image: url("../assets/img/home-testimonial-bg.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 
   .quote {
     width: 50%;

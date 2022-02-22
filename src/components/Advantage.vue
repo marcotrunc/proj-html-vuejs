@@ -7,7 +7,7 @@
         <div
           v-for="(card, index) in adCards"
           :key="index"
-          class="col-3 text-white text-center"
+          class="col-lg-3 col-md-6 col-12 text-white text-center"
         >
           <!-- Single Card -->
           <div>

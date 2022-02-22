@@ -5,7 +5,7 @@
       v-for="(item, index) in socialList"
       :key="index"
       class="bs-black"
-      :class="{ 'bs-pink': bgCol }"
+      :class="{ 'bs-pink': isPink }"
     >
       <i class="fa-brands text-white fa-lg" :class="item.name"></i
     ></a>
@@ -15,7 +15,7 @@
 <script>
 export default {
   name: "SocialIcons",
-  props: ["notSocial", "socialList", "bgCol"],
+  props: ["notSocial", "socialList", "isPink"],
 };
 </script>
 
@@ -38,6 +38,9 @@ export default {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    &:hover {
+      background-color: $shark;
+    }
   }
 }
 </style>

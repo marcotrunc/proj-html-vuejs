@@ -2,15 +2,25 @@
   <section class="container-fluid position-relative bs-black py-7">
     <div class="container">
       <Title title-text="Meet our Trainers" />
-
-      <Cards
-        :list="trainers"
-        :bk-col="'bs-black-lg'"
-        :not-social="false"
-        :isColumn="false"
-        :socialList="socialList"
-        :isScaled="true"
-      />
+      <div class="row h-100 g-5">
+        <div
+          class="offset-2 col-8 offset-lg-0 col-lg-4"
+          v-for="(card, index) in trainers"
+          :key="index"
+        >
+          <Cards
+            :imgUrl="card.imgUrl"
+            :title="card.title"
+            :role="card.role"
+            :text="card.text"
+            :bk-col="'bs-black-lg'"
+            :not-social="false"
+            :isColumn="false"
+            :socialList="socialList"
+            :isScaled="true"
+          />
+        </div>
+      </div>
       <div class="d-flex justify-content-center mt-5 py-5">
         <Btn text-btn="View all trainers" />
       </div>
